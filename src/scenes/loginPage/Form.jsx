@@ -63,7 +63,7 @@ const Form = () => {
         formData.append('imagePath', values.picture.name);
 
         const saveUserResponse = await fetch(
-            "http://localhost:3001/auth/register",
+            "https://socialnetwork-be-pe8p.onrender.com/auth/register",
             {
                 method: "POST",
                 body: formData,
@@ -80,7 +80,7 @@ const Form = () => {
 
     const login = async (values, onSubmitProps) => {
         const loggedInResponse = await fetch(
-            "http://localhost:3001/auth/login",
+            "https://socialnetwork-be-pe8p.onrender.com/auth/login",
             {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },

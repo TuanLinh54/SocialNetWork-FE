@@ -16,7 +16,7 @@ const ProfilePage = () => {
 
     const getUser = async () => {
         const response = await fetch(
-            `http://localhost:3001/users/${userId}`,
+            `https://socialnetwork-be-pe8p.onrender.com/users/${userId}`,
             {
                 method: "GET",
                 headers: {
